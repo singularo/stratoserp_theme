@@ -1,0 +1,242 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/ajax";
+@import "component/field";
+@import "component/file";
+@import "component/filter";
+@import "component/form";
+@import "component/icon";
+@import "component/navbar";
+@import "component/node";
+@import "component/panel";
+@import "component/progress-bar";
+@import "component/table-drag";
+@import "component/tabs";
+@import "component/toolbar";
+
+// jQuery UI style overrides.
+@import "jquery-ui/autocomplete";
+
+ol, ul {
+  padding-left: 1.5em;
+  .popover &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Page header.
+.page-header {
+  margin-top: 0;
+}
+
+.navbar {
+  min-height: auto;
+}
+
+#horizontal-menu ul.sub-nav {
+  background-color: #f8f8f8;
+  border: 1px #e7e7e7;
+}
+
+// Footer.
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5;
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+// Help region.
+.region-help {
+  > .glyphicon {
+    font-size: $font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+
+.help-block, .control-group .help-inline {
+  color: $gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Other forms */
+.form-control {
+  width: auto;
+}
+
+/* Global node form customisations */
+.node-form {
+  input, select, .select-wrapper, .table, .input-group, label {
+    width: auto;
+    height: auto;
+    z-index: 0;
+  }
+  .form-autocomplete {
+    display: table;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    //.glyphicon {
+    //  top: 6px;
+    //  left: 6px;
+    //}
+  }
+  .input-group {
+    display: table;
+  }
+  input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
+    line-height: normal !important;
+  }
+  .table > tbody > tr > td {
+    padding: 2px;
+    vertical-align: middle;
+  }
+  .table > tbody > tr > td {
+    vertical-align: middle;
+  }
+  .tabledrag-toggle-weight {
+    display: none;
+  }
+}
+
+.field-multiple-table {
+  margin-bottom: 0;
+
+  .draggable {
+    div.form-item {
+      float: left;
+    }
+    button.multiple-fields-remove-button {
+      .icon:after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Custom css for items display on invoice, quote, po, goods receive */
+#edit-field-in-items-wrapper {
+  td {
+    padding: 0;
+  }
+  ul {
+    &.dropbutton {
+      list-style-type: none;
+    }
+    li {
+      float: right;
+    }
+  }
+
+  .paragraph-type-top {
+    margin-bottom: 0;
+  }
+
+  .paragraphs-subform {
+    .form-wrapper {
+      float: left;
+    }
+    .control-label {
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      width: 95%;
+    }
+
+    .field--name-field-it-item {
+      width: 30%;
+      padding-right: .5%;
+      .form-control {
+        width: 100%;
+      }
+    }
+
+    .field--name-field-it-quantity {
+      width: 10%;
+    }
+
+    .field--name-field-it-description {
+      width: 44%;
+      .form-control {
+        width: 99%;
+      }
+    }
+
+    .field--name-field-it-price {
+      width: 15%;
+    }
+  }
+}
+
+.layout {
+  .field--label,
+  .field--label-hidden,
+  .field__label {
+    clear: both;
+  }
+}
+
+.layout--twocol {
+  .layout__region {
+    padding: 5px;
+  }
+  .layout__region--top {
+    padding: 0;
+  }
+  .layout__region--bottom {
+    mark {
+      float: right;
+      padding: 1em;
+      background-color: #ff0;
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+    }
+    section article:nth-of-type(odd)  { background-color:#eee; }
+    section article:nth-of-type(even) { background-color:#fff; }
+    section article footer .layout--onecol {
+      padding: 0;
+    }
+  }
+}
+
+.pager {
+  margin: 0;
+  text-align: left;
+  li {
+    a {
+      border-radius: 0;
+    }
+    &.is-active {
+      a {
+        background-color: $gray-lighter;
+      }
+    }
+  }
+}
+
+.charts-highchart,
+.charts-google,
+.charts-c3 {
+  width: 100%;
+  height: 800px;
+}
+
