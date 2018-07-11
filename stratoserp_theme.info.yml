@@ -20,5 +20,5 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'stratoserp/global-styling'
-  - 'stratoserp/bootstrap-scripts'
+  - 'stratoserp_theme/global-styling'
+  - 'stratoserp_theme/bootstrap-scripts'

@@ -28,15 +28,26 @@ ol, ul {
 // Page header.
 .page-header {
   margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 0;
+  padding: 0;
 }
 
 .navbar {
   min-height: auto;
+  margin-bottom: 10px;
 }
 
-#horizontal-menu ul.sub-nav {
-  background-color: #f8f8f8;
-  border: 1px #e7e7e7;
+.horizontal-menu {
+  ul.sub-nav {
+    background-color: #f8f8f8;
+    border: 1px #e7e7e7;
+  }
+  li:hover > ul {
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-top: 0;
+  }
 }
 
 // Footer.
@@ -218,6 +229,41 @@ p:last-child,
   }
 }
 
+/* Views themeing */
+.view .views-exposed-form {
+  .form-item-description, .form-item-name {
+    input {
+      width: 15em;
+    }
+  }
+  .form-item-email, .form-item-business {
+    input {
+      width: 12em;
+    }
+  }
+  .form-item-phone, .form-item-mobile, .form-item-item-code {
+    input {
+      width: 8em;
+    }
+  }
+  .form-type-entity-autocomplete {
+    input {
+      width: 15em;
+    }
+  }
+  .form-item-purchase-order-id, .form-item-goods-receive-id, .form-item-invoice-id, .form-item-quote-id {
+    input {
+      width: 6em;
+    }
+  }
+}
+
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 5px;
+  line-height: 1.1;
+}
+
 .pager {
   margin: 0;
   text-align: left;
@@ -229,6 +275,9 @@ p:last-child,
       a {
         background-color: $gray-lighter;
       }
+    }
+    &.pager__item--ellipsis {
+      display: none;
     }
   }
 }
