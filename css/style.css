@@ -6476,6 +6476,16 @@ p:last-child,
 .view .views-exposed-form .form-item-purchase-order-id input, .view .views-exposed-form .form-item-goods-receive-id input, .view .views-exposed-form .form-item-invoice-id input, .view .views-exposed-form .form-item-quote-id input {
   width: 6em; }
 
+.view-eva .table-responsive {
+  min-height: 300px;
+  table-layout: fixed;
+  white-space: nowrap;
+  display: block; }
+  .view-eva .table-responsive td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
   padding: 5px;
   line-height: 1.1; }
