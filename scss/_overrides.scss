@@ -172,39 +172,34 @@ p:last-child,
   }
 
   .paragraphs-subform {
-    .form-wrapper {
-      float: left;
+    .field--type-decimal,
+    .field--type-entity-reference,
+    .field--type-datetime,
+    .field--type-float {
+      display: inline-block;
     }
+
     .control-label {
       margin-bottom: 0;
     }
 
     .form-control {
-      width: 95%;
-    }
-
-    .field--name-field-it-item {
-      width: 30%;
-      padding-right: .5%;
-      .form-control {
-        width: 100%;
-      }
+      padding-right: 10px;
     }
 
     .field--name-field-it-quantity {
-      width: 10%;
+      // width: 10%;
     }
 
-    .field--name-field-it-description {
-      width: 44%;
-      .form-control {
-        width: 99%;
-      }
-    }
+    // .field--name-field-it-description {
+    //   .form-control {
+    //     width: 99%;
+    //   }
+    // }
 
-    .field--name-field-it-price {
-      width: 15%;
-    }
+    // .field--name-field-it-price {
+    //   width: 15%;
+    // }
   }
 }
 

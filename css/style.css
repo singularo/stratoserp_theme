@@ -6421,25 +6421,15 @@ p:last-child,
   float: right; }
 #edit-field-in-items-wrapper .paragraph-type-top {
   margin-bottom: 0; }
-#edit-field-in-items-wrapper .paragraphs-subform .form-wrapper {
-  float: left; }
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-decimal,
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-entity-reference,
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-datetime,
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-float {
+  display: inline-block; }
 #edit-field-in-items-wrapper .paragraphs-subform .control-label {
   margin-bottom: 0; }
 #edit-field-in-items-wrapper .paragraphs-subform .form-control {
-  width: 95%; }
-#edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-item {
-  width: 30%;
-  padding-right: .5%; }
-  #edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-item .form-control {
-    width: 100%; }
-#edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-quantity {
-  width: 10%; }
-#edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-description {
-  width: 44%; }
-  #edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-description .form-control {
-    width: 99%; }
-#edit-field-in-items-wrapper .paragraphs-subform .field--name-field-it-price {
-  width: 15%; }
+  padding-right: 10px; }
 
 .layout .field--label,
 .layout .field--label-hidden,
