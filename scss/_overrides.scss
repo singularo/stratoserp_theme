@@ -280,7 +280,18 @@ p:last-child,
   }
 }
 
-.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+.view-wi-submissions {
+  .table-responsive {
+    min-height: 0;
+  }
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
   padding: 5px;
   line-height: 1.1;
 }
