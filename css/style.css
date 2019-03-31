@@ -6392,11 +6392,13 @@ p:last-child,
 .node-form .form-autocomplete {
   display: table; }
 .node-form .form-group {
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 .node-form .input-group {
   display: table; }
 .node-form input[type="date"].form-control, .node-form input[type="time"].form-control, .node-form input[type="datetime-local"].form-control, .node-form input[type="month"].form-control {
   line-height: normal !important; }
+.node-form .panel-heading {
+  display: none; }
 .node-form .table > tbody > tr > td {
   padding: 2px;
   vertical-align: middle; }
@@ -6413,25 +6415,74 @@ p:last-child,
     display: none; }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
-#edit-field-in-items-wrapper td {
+#edit-field-in-items-wrapper td,
+#edit-field-qu-items-wrapper td,
+#edit-field-po-items-wrapper td,
+#edit-field-gr-items-wrapper td {
   padding: 0; }
-#edit-field-in-items-wrapper ul.dropbutton {
+#edit-field-in-items-wrapper ul.dropbutton,
+#edit-field-qu-items-wrapper ul.dropbutton,
+#edit-field-po-items-wrapper ul.dropbutton,
+#edit-field-gr-items-wrapper ul.dropbutton {
   list-style-type: none; }
-#edit-field-in-items-wrapper ul li {
+#edit-field-in-items-wrapper ul li,
+#edit-field-qu-items-wrapper ul li,
+#edit-field-po-items-wrapper ul li,
+#edit-field-gr-items-wrapper ul li {
   float: right; }
-#edit-field-in-items-wrapper .paragraph-type-top {
+#edit-field-in-items-wrapper .paragraph-type-top,
+#edit-field-qu-items-wrapper .paragraph-type-top,
+#edit-field-po-items-wrapper .paragraph-type-top,
+#edit-field-gr-items-wrapper .paragraph-type-top {
   margin-bottom: 0; }
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-decimal,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-entity-reference,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-float {
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-float,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-decimal,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-entity-reference,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-float,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-decimal,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-entity-reference,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-float,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-decimal,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-entity-reference,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-float {
   display: inline-block; }
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-datetime {
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-datetime,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-datetime,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-datetime,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-datetime {
   display: table; }
-#edit-field-in-items-wrapper .paragraphs-subform .control-label {
+#edit-field-in-items-wrapper .paragraphs-subform .control-label,
+#edit-field-qu-items-wrapper .paragraphs-subform .control-label,
+#edit-field-po-items-wrapper .paragraphs-subform .control-label,
+#edit-field-gr-items-wrapper .paragraphs-subform .control-label {
   margin-bottom: 0; }
-#edit-field-in-items-wrapper .paragraphs-subform .form-control {
+#edit-field-in-items-wrapper .paragraphs-subform .form-control,
+#edit-field-qu-items-wrapper .paragraphs-subform .form-control,
+#edit-field-po-items-wrapper .paragraphs-subform .form-control,
+#edit-field-gr-items-wrapper .paragraphs-subform .form-control {
   padding-right: 10px; }
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label {
+  display: none; }
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel {
+  background-color: inherit;
+  border: none; }
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body {
+  padding: 0; }
 
 .layout .field--label,
 .layout .field--label-hidden,

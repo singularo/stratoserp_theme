@@ -114,7 +114,7 @@ p:last-child,
     display: table;
   }
   .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     //.glyphicon {
     //  top: 6px;
     //  left: 6px;
@@ -125,6 +125,9 @@ p:last-child,
   }
   input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
     line-height: normal !important;
+  }
+  .panel-heading {
+    display: none;
   }
   .table > tbody > tr > td {
     padding: 2px;
@@ -154,7 +157,10 @@ p:last-child,
 }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
-#edit-field-in-items-wrapper {
+#edit-field-in-items-wrapper,
+#edit-field-qu-items-wrapper,
+#edit-field-po-items-wrapper,
+#edit-field-gr-items-wrapper {
   td {
     padding: 0;
   }
@@ -204,6 +210,18 @@ p:last-child,
     // .field--name-field-it-price {
     //   width: 15%;
     // }
+    .field--type-dynamic-entity-reference {
+      .control-label {
+        display: none;
+      }
+      .panel {
+        background-color: inherit;
+        border: none;
+      }
+      .panel-body {
+        padding: 0;
+      }
+    }
   }
 }
 
