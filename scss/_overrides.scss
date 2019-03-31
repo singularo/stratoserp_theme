@@ -174,9 +174,13 @@ p:last-child,
   .paragraphs-subform {
     .field--type-decimal,
     .field--type-entity-reference,
-    .field--type-datetime,
+    .field--type-dynamic-entity-reference,
     .field--type-float {
       display: inline-block;
+    }
+
+    .field--type-datetime {
+      display: table;
     }
 
     .control-label {

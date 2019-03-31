@@ -1,7 +1,7 @@
 {
-  "name": "Project_Name",
-  "version": "1.0.0",
-  "description": "Project description.",
+  "name": "stratoserp_theme",
+  "version": "0.0.1",
+  "description": "StratosERP bootstrap based theme.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,12 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-ruby-sass": "^2.0.3"
+    "gulp-ruby-sass": "^2.1.1"
   },
   "dependencies": {
+    "compass": "^0.1.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-changed": "^3.2.0",
+    "gulp-compass": "^2.1.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2",
     "sass": "^1.0.0-beta.4"
   }
 }

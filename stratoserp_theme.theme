@@ -9,3 +9,14 @@
 // function stratoserp_theme_preprocess_form_element(&$variables) {
 //   echo "#" . $variables['#id'] . "#";
 // }
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function stratoserp_theme_preprocess_node(&$variables) {
+  // Remove the "Add new comment" link on teasers or when the comment form is
+  // displayed on the page.
+  if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
+    unset($variables['content']['links']['comment']['#links']['comment-add']);
+  }
+}
