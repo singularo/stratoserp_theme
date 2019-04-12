@@ -6518,6 +6518,20 @@ p:last-child,
   width: 15em; }
 .view .views-exposed-form .form-item-purchase-order-id input, .view .views-exposed-form .form-item-goods-receive-id input, .view .views-exposed-form .form-item-invoice-id input, .view .views-exposed-form .form-item-quote-id input {
   width: 6em; }
+.view .views-field-created {
+  width: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.view .views-field-field-in-id,
+.view .views-field-field-po-id,
+.view .views-field-field-pa-id,
+.view .views-field-field-qu-id,
+.view .views-field-field-ti-id {
+  width: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.view .views-field-field-pa-total {
+  text-align: right; }
 
 .view-eva .table-responsive {
   min-height: 300px;
@@ -6528,6 +6542,31 @@ p:last-child,
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+
+.table tbody tr td.views-field-field-pa-items {
+  padding: 0;
+  border-top: none; }
+  .table tbody tr td.views-field-field-pa-items .table {
+    margin-bottom: 0;
+    width: 100%; }
+    .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(1) {
+      width: 50%;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(2) {
+      width: 25%;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(3) {
+      width: 25%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: right; }
+  .table tbody tr td.views-field-field-pa-items .table-responsive {
+    min-height: 0;
+    border-top: none; }
+    .table tbody tr td.views-field-field-pa-items .table-responsive thead {
+      display: none; }
 
 .view-wi-submissions .table-responsive {
   min-height: 0; }

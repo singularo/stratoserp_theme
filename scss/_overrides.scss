@@ -287,6 +287,23 @@ p:last-child,
       }
     }
   }
+  .views-field-created {
+    width: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .views-field-field-in-id,
+  .views-field-field-po-id,
+  .views-field-field-pa-id,
+  .views-field-field-qu-id,
+  .views-field-field-ti-id {
+    width: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .views-field-field-pa-total {
+    text-align: right;
+  }
 }
 
 .view-eva {
@@ -299,6 +316,58 @@ p:last-child,
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+  }
+}
+
+.table {
+  tbody {
+    tr {
+      td.views-field-field-pa-items {
+        padding: 0;
+        border-top: none;
+
+        .table {
+          margin-bottom: 0;
+          width: 100%;
+
+          tbody {
+            tr {
+              td {
+                //padding: 0;
+              }
+
+              td:nth-child(1) {
+                width: 50%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              td:nth-child(2) {
+                width: 25%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+
+              td:nth-child(3) {
+                width: 25%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: right;
+              }
+            }
+          }
+        }
+
+        .table-responsive {
+          min-height: 0;
+          border-top: none;
+
+          thead {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
