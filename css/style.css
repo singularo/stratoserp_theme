@@ -6549,18 +6549,15 @@ p:last-child,
   .table tbody tr td.views-field-field-pa-items .table {
     margin-bottom: 0;
     width: 100%; }
+    .table tbody tr td.views-field-field-pa-items .table tbody tr td {
+      overflow: hidden;
+      text-overflow: ellipsis; }
     .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(1) {
-      width: 50%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      width: 50%; }
     .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(2) {
-      width: 25%;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+      width: 25%; }
     .table tbody tr td.views-field-field-pa-items .table tbody tr td:nth-child(3) {
       width: 25%;
-      overflow: hidden;
-      text-overflow: ellipsis;
       text-align: right; }
   .table tbody tr td.views-field-field-pa-items .table-responsive {
     min-height: 0;

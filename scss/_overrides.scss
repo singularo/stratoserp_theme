@@ -335,24 +335,20 @@ p:last-child,
             tr {
               td {
                 //padding: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
               }
 
               td:nth-child(1) {
                 width: 50%;
-                overflow: hidden;
-                text-overflow: ellipsis;
               }
 
               td:nth-child(2) {
                 width: 25%;
-                overflow: hidden;
-                text-overflow: ellipsis;
               }
 
               td:nth-child(3) {
                 width: 25%;
-                overflow: hidden;
-                text-overflow: ellipsis;
                 text-align: right;
               }
             }
