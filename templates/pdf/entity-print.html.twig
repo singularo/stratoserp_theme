@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="gt-ie9 no-js">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <style>
+    form>fieldset {margin-bottom:20px;}
+
+    .c-table {width:100%; margin-bottom:20px; text-align:left;}
+    .c-table th {text-align:left;}
+
+    legend.c-content-form__label, label, .field--widget-ua-description-field-standard {color:#999;}
+    .entity-print-form-replacement {color:#000;}
+    .c-content-form__help-text {color:#999;}
+    .form-type-radio label {color:#000;}
+    .c-content-form__group {padding:0px 0px 10px 0px;}
+    fieldset.field-group {padding-bottom:20px; padding-top:30px;}
+    fieldset>legend {font-weight:bold;}
+
+    .limit-text, .indicates, .c-btn, .field-gate-message  {display:none;}
+    #field-co-ext-confirmation-values .field--name-field-user,
+    #field-co-ext-confirmation-values .field--name-field-role {display:none;}
+    #field-pgc-or-hos .field--name-field-ph-user,
+    #field-pgc-or-hos .field--name-field-ph-role {display:none;}
+
+    .group_confidential_report {display:none;}
+    .group_please_indicate .fieldset-legend {color:#999;}
+
+    .field--name-field-please-select-recommendati label,
+    .form-item-field-co-ext-confirmation-0-field-user-name-0 label,
+    .form-item-field-co-ext-confirmation-1-field-user-name-0 label,
+    .form-item-field-co-ext-confirmation-2-field-user-name-0 label,
+    .form-item-field-co-ext-confirmation-3-field-user-name-0 label,
+    .form-item-field-co-ext-confirmation-4-field-user-name-0 label,
+    .form-item-field-pgc-or-hos-0-field-user-name-0 label {font-weight:bold; color:#000;}
+
+    #field-enter-clearance-number-values thead tr,
+    #field-ani-unsubmited-values thead tr,
+    #edit-field-contracts-upload-table thead tr {display:none;}
+
+    #logo {width:198px; height:61px; display:block; position:absolute; top:10px; right:10px;}
+    .page {margin-top:40px;}
+  </style>
+</head>
+<body>
+  <h1>Adelaide Graduate Centre</h1>
+  <img id="logo" src="file://{{ logo_path }}" />
+  {{ label }}
+  <div class="page">
+      {{ content }}
+  </div>
+</body>
+</html>
