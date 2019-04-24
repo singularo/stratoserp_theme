@@ -20,3 +20,10 @@ function stratoserp_theme_preprocess_node(&$variables) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
 }
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function stratoserp_theme_preprocess_entity_print__se_invoice(&$variables) {
+  $variables['logo_path'] = '';
+}

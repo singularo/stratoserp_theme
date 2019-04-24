@@ -6347,13 +6347,6 @@ ol, ul {
   border: 1px solid #e7e7e7;
   border-top: 0; }
 
-.responsive-menu-toggle-icon:before,
-.responsive-menu-toggle-icon:after {
-  background: #000000; }
-
-.responsive-menu-toggle-icon span.icon, .responsive-menu-toggle-icon span.label {
-  background: #000000; }
-
 .footer {
   margin-top: 45px;
   padding-top: 35px;

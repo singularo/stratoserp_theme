@@ -22,3 +22,11 @@ regions:
 libraries:
   - 'stratoserp_theme/global-styling'
   - 'stratoserp_theme/bootstrap-scripts'
+
+entity_print:
+  all: 'stratoserp_theme/pdf'
+#  se_invoice:
+#    all: 'stratoserp_theme/se_invoice'
+#  se_quote:
+#    all: 'stratoserp_theme/se_quote'
+
