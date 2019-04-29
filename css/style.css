@@ -6512,7 +6512,7 @@ p:last-child,
 .view .views-exposed-form .form-item-purchase-order-id input, .view .views-exposed-form .form-item-goods-receive-id input, .view .views-exposed-form .form-item-invoice-id input, .view .views-exposed-form .form-item-quote-id input {
   width: 6em; }
 .view .views-field-created {
-  width: 2em;
+  width: 7em;
   overflow: hidden;
   text-overflow: ellipsis; }
 .view .views-field-field-in-id,
