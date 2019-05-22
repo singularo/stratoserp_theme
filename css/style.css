@@ -6381,7 +6381,7 @@ p:last-child,
 .node-form input, .node-form select, .node-form .select-wrapper, .node-form .table, .node-form .input-group, .node-form label {
   width: auto;
   height: auto;
-  z-index: 0; }
+  border-radius: 0; }
 .node-form .form-autocomplete {
   display: table; }
 .node-form .form-group {
@@ -6398,6 +6398,18 @@ p:last-child,
 .node-form .table > tbody > tr > td {
   vertical-align: middle; }
 .node-form .tabledrag-toggle-weight {
+  display: none; }
+.node-form .form-type-select label {
+  display: block; }
+.node-form .form-type-select .form-control {
+  border: none;
+  box-shadow: none;
+  padding: 0; }
+.node-form .form-type-select .chosen-container-single {
+  width: auto !important; }
+  .node-form .form-type-select .chosen-container-single div b {
+    background: none; }
+.node-form .filter-wrapper {
   display: none; }
 
 .field-multiple-table {
@@ -6459,7 +6471,7 @@ p:last-child,
 #edit-field-qu-items-wrapper .paragraphs-subform .form-control,
 #edit-field-po-items-wrapper .paragraphs-subform .form-control,
 #edit-field-gr-items-wrapper .paragraphs-subform .form-control {
-  padding-right: 10px; }
+  padding-right: 2em; }
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
@@ -6470,12 +6482,21 @@ p:last-child,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel {
   background-color: inherit;
-  border: none; }
+  border: none;
+  box-shadow: none; }
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body {
   padding: 0; }
+#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
+#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
+#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
+#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select {
+  padding-left: .5em;
+  padding-top: .65em;
+  padding-bottom: .60em;
+  border: 1px solid #ccc; }
 
 .layout .field--label,
 .layout .field--label-hidden,
