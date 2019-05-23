@@ -6382,21 +6382,35 @@ p:last-child,
   width: auto;
   height: auto;
   border-radius: 0; }
+.node-form .control-label {
+  margin-bottom: 0; }
 .node-form .form-autocomplete {
   display: table; }
+.node-form .form-control {
+  padding: 3px; }
 .node-form .form-group {
   margin-bottom: 5px; }
 .node-form .input-group {
   display: table; }
 .node-form input[type="date"].form-control, .node-form input[type="time"].form-control, .node-form input[type="datetime-local"].form-control, .node-form input[type="month"].form-control {
   line-height: normal !important; }
+.node-form .panel {
+  border: none;
+  box-shadow: none; }
 .node-form .panel-heading {
   display: none; }
+.node-form .panel-body {
+  padding: 0; }
+.node-form .table > thead > tr > th {
+  border-bottom: none; }
 .node-form .table > tbody > tr > td {
+  border-top: none;
   padding: 2px;
   vertical-align: middle; }
-.node-form .table > tbody > tr > td {
-  vertical-align: middle; }
+.node-form .tabledrag-handle {
+  font-size: 100%;
+  margin: -7px 0 0 -7px;
+  padding: 7px; }
 .node-form .tabledrag-toggle-weight {
   display: none; }
 .node-form .form-type-select label {
@@ -6420,26 +6434,40 @@ p:last-child,
     display: none; }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
+#edit-field-bi-items-wrapper td,
 #edit-field-in-items-wrapper td,
 #edit-field-qu-items-wrapper td,
 #edit-field-po-items-wrapper td,
 #edit-field-gr-items-wrapper td {
   padding: 0; }
+#edit-field-bi-items-wrapper ul.dropbutton,
 #edit-field-in-items-wrapper ul.dropbutton,
 #edit-field-qu-items-wrapper ul.dropbutton,
 #edit-field-po-items-wrapper ul.dropbutton,
 #edit-field-gr-items-wrapper ul.dropbutton {
   list-style-type: none; }
+#edit-field-bi-items-wrapper ul li,
 #edit-field-in-items-wrapper ul li,
 #edit-field-qu-items-wrapper ul li,
 #edit-field-po-items-wrapper ul li,
 #edit-field-gr-items-wrapper ul li {
   float: right; }
+#edit-field-bi-items-wrapper .paragraph-type-top,
 #edit-field-in-items-wrapper .paragraph-type-top,
 #edit-field-qu-items-wrapper .paragraph-type-top,
 #edit-field-po-items-wrapper .paragraph-type-top,
 #edit-field-gr-items-wrapper .paragraph-type-top {
   margin-bottom: 0; }
+#edit-field-bi-items-wrapper .paragraphs-subform .form-item,
+#edit-field-in-items-wrapper .paragraphs-subform .form-item,
+#edit-field-qu-items-wrapper .paragraphs-subform .form-item,
+#edit-field-po-items-wrapper .paragraphs-subform .form-item,
+#edit-field-gr-items-wrapper .paragraphs-subform .form-item {
+  margin-bottom: 2px; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-decimal,
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-entity-reference,
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-float,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-decimal,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-entity-reference,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
@@ -6457,26 +6485,32 @@ p:last-child,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-float {
   display: inline-block; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-datetime,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-datetime,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-datetime,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-datetime,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-datetime {
+  clear: both;
   display: table; }
-#edit-field-in-items-wrapper .paragraphs-subform .control-label,
-#edit-field-qu-items-wrapper .paragraphs-subform .control-label,
-#edit-field-po-items-wrapper .paragraphs-subform .control-label,
-#edit-field-gr-items-wrapper .paragraphs-subform .control-label {
-  margin-bottom: 0; }
+#edit-field-bi-items-wrapper .paragraphs-subform .form-control,
 #edit-field-in-items-wrapper .paragraphs-subform .form-control,
 #edit-field-qu-items-wrapper .paragraphs-subform .form-control,
 #edit-field-po-items-wrapper .paragraphs-subform .form-control,
 #edit-field-gr-items-wrapper .paragraphs-subform .form-control {
-  padding-right: 2em; }
+  padding: 3px; }
+#edit-field-bi-items-wrapper .paragraphs-subform .input-group-addon,
+#edit-field-in-items-wrapper .paragraphs-subform .input-group-addon,
+#edit-field-qu-items-wrapper .paragraphs-subform .input-group-addon,
+#edit-field-po-items-wrapper .paragraphs-subform .input-group-addon,
+#edit-field-gr-items-wrapper .paragraphs-subform .input-group-addon {
+  padding: 3px; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label {
   display: none; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
@@ -6484,18 +6518,18 @@ p:last-child,
   background-color: inherit;
   border: none;
   box-shadow: none; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body {
   padding: 0; }
+#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
 #edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
 #edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
 #edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select {
-  padding-left: .5em;
-  padding-top: .65em;
-  padding-bottom: .60em;
+  padding: .40em 2em .40em .5em;
   border: 1px solid #ccc; }
 
 .layout .field--label,
