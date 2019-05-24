@@ -6598,7 +6598,7 @@ p:last-child,
   text-align: right; }
 
 .view-eva .table-responsive {
-  min-height: 300px;
+  min-height: 308px;
   table-layout: fixed;
   white-space: nowrap;
   display: block; }
