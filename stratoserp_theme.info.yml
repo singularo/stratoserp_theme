@@ -22,6 +22,8 @@ regions:
 libraries:
   - 'stratoserp_theme/global-styling'
   - 'stratoserp_theme/bootstrap-scripts'
+  - 'stratoserp_theme/views_height_lock'
+  - 'stratoserp_theme/tabindex_fixer'
 
 entity_print:
   all: 'stratoserp_theme/pdf'

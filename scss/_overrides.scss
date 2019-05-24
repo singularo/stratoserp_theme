@@ -179,8 +179,13 @@ p:last-child,
 
     .chosen-container-single {
       width: auto !important;
+
       div b {
           background: none;
+      }
+
+      .chosen-drop {
+        margin-top: -8px;
       }
     }
   }
@@ -188,6 +193,24 @@ p:last-child,
   .filter-wrapper {
     display: none;
   }
+
+  .input-group-addon {
+    padding: 3px;
+    //.glyphicon {
+    //  left: -50%;
+    //}
+  }
+
+  .multiple-fields-remove-button,
+  .multiple-fields-remove-button:hover {
+    top: 42%;
+    right: -15px;
+  }
+
+  .btn {
+    padding: 3px 8px;
+  }
+
 }
 
 .field-multiple-table {
@@ -285,6 +308,13 @@ p:last-child,
       }
     }
   }
+
+  .paragraphs-dropdown-actions {
+    .btn-danger {
+      color: #000000;
+    }
+  }
+
 }
 
 .layout {

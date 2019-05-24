@@ -21,3 +21,10 @@ bootstrap-scripts:
 views_height_lock:
   js:
     js/views_height_lock.js: { minified: true, preprocess: false }
+
+tabindex_fixer:
+  js:
+    js/tabindex_fixer.js: { minified: true, preprocess: false }
+  dependencies:
+    - core/jquery
+    - core/jquery.once

@@ -6423,8 +6423,18 @@ p:last-child,
   width: auto !important; }
   .node-form .form-type-select .chosen-container-single div b {
     background: none; }
+  .node-form .form-type-select .chosen-container-single .chosen-drop {
+    margin-top: -8px; }
 .node-form .filter-wrapper {
   display: none; }
+.node-form .input-group-addon {
+  padding: 3px; }
+.node-form .multiple-fields-remove-button,
+.node-form .multiple-fields-remove-button:hover {
+  top: 42%;
+  right: -15px; }
+.node-form .btn {
+  padding: 3px 8px; }
 
 .field-multiple-table {
   margin-bottom: 0; }
@@ -6531,6 +6541,12 @@ p:last-child,
 #edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select {
   padding: .40em 2em .40em .5em;
   border: 1px solid #ccc; }
+#edit-field-bi-items-wrapper .paragraphs-dropdown-actions .btn-danger,
+#edit-field-in-items-wrapper .paragraphs-dropdown-actions .btn-danger,
+#edit-field-qu-items-wrapper .paragraphs-dropdown-actions .btn-danger,
+#edit-field-po-items-wrapper .paragraphs-dropdown-actions .btn-danger,
+#edit-field-gr-items-wrapper .paragraphs-dropdown-actions .btn-danger {
+  color: #000000; }
 
 .layout .field--label,
 .layout .field--label-hidden,

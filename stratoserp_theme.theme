@@ -6,9 +6,6 @@
  *
  * Place your custom PHP code in this file.
  */
-// function stratoserp_theme_preprocess_form_element(&$variables) {
-//   echo "#" . $variables['#id'] . "#";
-// }
 
 /**
  * Implements hook_preprocess_HOOK() for node.html.twig.
