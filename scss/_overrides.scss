@@ -98,7 +98,9 @@ p:last-child,
 }
 
 /* Global node form customisations */
-.node-form {
+.node-form,
+.se-item-form,
+.se-information-form {
   input, select, .select-wrapper, .table, .input-group, label {
     width: auto;
     height: auto;

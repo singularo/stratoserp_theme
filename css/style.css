@@ -6378,62 +6378,126 @@ p:last-child,
   width: auto; }
 
 /* Global node form customisations */
-.node-form input, .node-form select, .node-form .select-wrapper, .node-form .table, .node-form .input-group, .node-form label {
+.node-form input, .node-form select, .node-form .select-wrapper, .node-form .table, .node-form .input-group, .node-form label,
+.se-item-form input,
+.se-item-form select,
+.se-item-form .select-wrapper,
+.se-item-form .table,
+.se-item-form .input-group,
+.se-item-form label,
+.se-information-form input,
+.se-information-form select,
+.se-information-form .select-wrapper,
+.se-information-form .table,
+.se-information-form .input-group,
+.se-information-form label {
   width: auto;
   height: auto;
   border-radius: 0; }
-.node-form .control-label {
+.node-form .control-label,
+.se-item-form .control-label,
+.se-information-form .control-label {
   margin-bottom: 0; }
-.node-form .form-autocomplete {
+.node-form .form-autocomplete,
+.se-item-form .form-autocomplete,
+.se-information-form .form-autocomplete {
   display: table; }
-.node-form .form-control {
+.node-form .form-control,
+.se-item-form .form-control,
+.se-information-form .form-control {
   padding: 3px; }
-.node-form .form-group {
+.node-form .form-group,
+.se-item-form .form-group,
+.se-information-form .form-group {
   margin-bottom: 5px; }
-.node-form .input-group {
+.node-form .input-group,
+.se-item-form .input-group,
+.se-information-form .input-group {
   display: table; }
-.node-form input[type="date"].form-control, .node-form input[type="time"].form-control, .node-form input[type="datetime-local"].form-control, .node-form input[type="month"].form-control {
+.node-form input[type="date"].form-control, .node-form input[type="time"].form-control, .node-form input[type="datetime-local"].form-control, .node-form input[type="month"].form-control,
+.se-item-form input[type="date"].form-control,
+.se-item-form input[type="time"].form-control,
+.se-item-form input[type="datetime-local"].form-control,
+.se-item-form input[type="month"].form-control,
+.se-information-form input[type="date"].form-control,
+.se-information-form input[type="time"].form-control,
+.se-information-form input[type="datetime-local"].form-control,
+.se-information-form input[type="month"].form-control {
   line-height: normal !important; }
-.node-form .panel {
+.node-form .panel,
+.se-item-form .panel,
+.se-information-form .panel {
   border: none;
   box-shadow: none; }
-.node-form .panel-heading {
+.node-form .panel-heading,
+.se-item-form .panel-heading,
+.se-information-form .panel-heading {
   display: none; }
-.node-form .panel-body {
+.node-form .panel-body,
+.se-item-form .panel-body,
+.se-information-form .panel-body {
   padding: 0; }
-.node-form .table > thead > tr > th {
+.node-form .table > thead > tr > th,
+.se-item-form .table > thead > tr > th,
+.se-information-form .table > thead > tr > th {
   border-bottom: none; }
-.node-form .table > tbody > tr > td {
+.node-form .table > tbody > tr > td,
+.se-item-form .table > tbody > tr > td,
+.se-information-form .table > tbody > tr > td {
   border-top: none;
   padding: 2px;
   vertical-align: middle; }
-.node-form .tabledrag-handle {
+.node-form .tabledrag-handle,
+.se-item-form .tabledrag-handle,
+.se-information-form .tabledrag-handle {
   font-size: 100%;
   margin: -7px 0 0 -7px;
   padding: 7px; }
-.node-form .tabledrag-toggle-weight {
+.node-form .tabledrag-toggle-weight,
+.se-item-form .tabledrag-toggle-weight,
+.se-information-form .tabledrag-toggle-weight {
   display: none; }
-.node-form .form-type-select label {
+.node-form .form-type-select label,
+.se-item-form .form-type-select label,
+.se-information-form .form-type-select label {
   display: block; }
-.node-form .form-type-select .form-control {
+.node-form .form-type-select .form-control,
+.se-item-form .form-type-select .form-control,
+.se-information-form .form-type-select .form-control {
   border: none;
   box-shadow: none;
   padding: 0; }
-.node-form .form-type-select .chosen-container-single {
+.node-form .form-type-select .chosen-container-single,
+.se-item-form .form-type-select .chosen-container-single,
+.se-information-form .form-type-select .chosen-container-single {
   width: auto !important; }
-  .node-form .form-type-select .chosen-container-single div b {
+  .node-form .form-type-select .chosen-container-single div b,
+  .se-item-form .form-type-select .chosen-container-single div b,
+  .se-information-form .form-type-select .chosen-container-single div b {
     background: none; }
-  .node-form .form-type-select .chosen-container-single .chosen-drop {
+  .node-form .form-type-select .chosen-container-single .chosen-drop,
+  .se-item-form .form-type-select .chosen-container-single .chosen-drop,
+  .se-information-form .form-type-select .chosen-container-single .chosen-drop {
     margin-top: -8px; }
-.node-form .filter-wrapper {
+.node-form .filter-wrapper,
+.se-item-form .filter-wrapper,
+.se-information-form .filter-wrapper {
   display: none; }
-.node-form .input-group-addon {
+.node-form .input-group-addon,
+.se-item-form .input-group-addon,
+.se-information-form .input-group-addon {
   padding: 3px; }
 .node-form .multiple-fields-remove-button,
-.node-form .multiple-fields-remove-button:hover {
+.node-form .multiple-fields-remove-button:hover,
+.se-item-form .multiple-fields-remove-button,
+.se-item-form .multiple-fields-remove-button:hover,
+.se-information-form .multiple-fields-remove-button,
+.se-information-form .multiple-fields-remove-button:hover {
   top: 42%;
   right: -15px; }
-.node-form .btn {
+.node-form .btn,
+.se-item-form .btn,
+.se-information-form .btn {
   padding: 3px 8px; }
 
 .field-multiple-table {
