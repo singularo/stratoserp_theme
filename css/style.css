@@ -6487,14 +6487,6 @@ p:last-child,
 .se-item-form .input-group-addon,
 .se-information-form .input-group-addon {
   padding: 3px; }
-.node-form .multiple-fields-remove-button,
-.node-form .multiple-fields-remove-button:hover,
-.se-item-form .multiple-fields-remove-button,
-.se-item-form .multiple-fields-remove-button:hover,
-.se-information-form .multiple-fields-remove-button,
-.se-information-form .multiple-fields-remove-button:hover {
-  top: 42%;
-  right: -15px; }
 .node-form .btn,
 .se-item-form .btn,
 .se-information-form .btn {
@@ -6508,109 +6500,33 @@ p:last-child,
     display: none; }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
-#edit-field-bi-items-wrapper td,
-#edit-field-in-items-wrapper td,
-#edit-field-qu-items-wrapper td,
-#edit-field-po-items-wrapper td,
-#edit-field-gr-items-wrapper td {
-  padding: 0; }
-#edit-field-bi-items-wrapper ul.dropbutton,
-#edit-field-in-items-wrapper ul.dropbutton,
-#edit-field-qu-items-wrapper ul.dropbutton,
-#edit-field-po-items-wrapper ul.dropbutton,
-#edit-field-gr-items-wrapper ul.dropbutton {
-  list-style-type: none; }
-#edit-field-bi-items-wrapper ul li,
-#edit-field-in-items-wrapper ul li,
-#edit-field-qu-items-wrapper ul li,
-#edit-field-po-items-wrapper ul li,
-#edit-field-gr-items-wrapper ul li {
-  float: right; }
-#edit-field-bi-items-wrapper .paragraph-type-top,
-#edit-field-in-items-wrapper .paragraph-type-top,
-#edit-field-qu-items-wrapper .paragraph-type-top,
-#edit-field-po-items-wrapper .paragraph-type-top,
-#edit-field-gr-items-wrapper .paragraph-type-top {
-  margin-bottom: 0; }
-#edit-field-bi-items-wrapper .paragraphs-subform .form-item,
-#edit-field-in-items-wrapper .paragraphs-subform .form-item,
-#edit-field-qu-items-wrapper .paragraphs-subform .form-item,
-#edit-field-po-items-wrapper .paragraphs-subform .form-item,
-#edit-field-gr-items-wrapper .paragraphs-subform .form-item {
-  margin-bottom: 2px; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-decimal,
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-entity-reference,
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-float,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-decimal,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-entity-reference,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-float,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-decimal,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-entity-reference,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-float,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-decimal,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-entity-reference,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-float,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-decimal,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-entity-reference,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-float {
-  display: inline-block; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-datetime,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-datetime,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-datetime,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-datetime,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-datetime {
-  clear: both;
-  display: table; }
-#edit-field-bi-items-wrapper .paragraphs-subform .form-control,
-#edit-field-in-items-wrapper .paragraphs-subform .form-control,
-#edit-field-qu-items-wrapper .paragraphs-subform .form-control,
-#edit-field-po-items-wrapper .paragraphs-subform .form-control,
-#edit-field-gr-items-wrapper .paragraphs-subform .form-control {
-  padding: 3px; }
-#edit-field-bi-items-wrapper .paragraphs-subform .input-group-addon,
-#edit-field-in-items-wrapper .paragraphs-subform .input-group-addon,
-#edit-field-qu-items-wrapper .paragraphs-subform .input-group-addon,
-#edit-field-po-items-wrapper .paragraphs-subform .input-group-addon,
-#edit-field-gr-items-wrapper .paragraphs-subform .input-group-addon {
-  padding: 3px; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .control-label {
+#edit-field-bi-items-wrapper select.dynamic-entity-reference-entity-type,
+#edit-field-in-items-wrapper select.dynamic-entity-reference-entity-type,
+#edit-field-qu-items-wrapper select.dynamic-entity-reference-entity-type,
+#edit-field-po-items-wrapper select.dynamic-entity-reference-entity-type,
+#edit-field-gr-items-wrapper select.dynamic-entity-reference-entity-type {
+  padding: .40em 2em .40em .5em;
+  border: 1px solid #ccc; }
+#edit-field-bi-items-wrapper .control-label,
+#edit-field-in-items-wrapper .control-label,
+#edit-field-qu-items-wrapper .control-label,
+#edit-field-po-items-wrapper .control-label,
+#edit-field-gr-items-wrapper .control-label {
   display: none; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel {
+#edit-field-bi-items-wrapper .panel,
+#edit-field-in-items-wrapper .panel,
+#edit-field-qu-items-wrapper .panel,
+#edit-field-po-items-wrapper .panel,
+#edit-field-gr-items-wrapper .panel {
   background-color: inherit;
   border: none;
   box-shadow: none; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .panel-body {
+#edit-field-bi-items-wrapper .panel-body,
+#edit-field-in-items-wrapper .panel-body,
+#edit-field-qu-items-wrapper .panel-body,
+#edit-field-po-items-wrapper .panel-body,
+#edit-field-gr-items-wrapper .panel-body {
   padding: 0; }
-#edit-field-bi-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
-#edit-field-in-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
-#edit-field-qu-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
-#edit-field-po-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select,
-#edit-field-gr-items-wrapper .paragraphs-subform .field--type-dynamic-entity-reference .form-select {
-  padding: .40em 2em .40em .5em;
-  border: 1px solid #ccc; }
-#edit-field-bi-items-wrapper .paragraphs-dropdown-actions .btn-danger,
-#edit-field-in-items-wrapper .paragraphs-dropdown-actions .btn-danger,
-#edit-field-qu-items-wrapper .paragraphs-dropdown-actions .btn-danger,
-#edit-field-po-items-wrapper .paragraphs-dropdown-actions .btn-danger,
-#edit-field-gr-items-wrapper .paragraphs-dropdown-actions .btn-danger {
-  color: #000000; }
 
 .layout .field--label,
 .layout .field--label-hidden,

@@ -203,12 +203,6 @@ p:last-child,
     //}
   }
 
-  .multiple-fields-remove-button,
-  .multiple-fields-remove-button:hover {
-    top: 42%;
-    right: -15px;
-  }
-
   .btn {
     padding: 3px 8px;
   }
@@ -237,85 +231,73 @@ p:last-child,
 #edit-field-qu-items-wrapper,
 #edit-field-po-items-wrapper,
 #edit-field-gr-items-wrapper {
-  td {
+  //td {
+  //  padding: 0;
+  //}
+  //ul {
+  //  &.dropbutton {
+  //    list-style-type: none;
+  //  }
+  //  li {
+  //    float: right;
+  //  }
+  //}
+
+  //.form-item {
+  //  margin-bottom: 2px;
+  //}
+  //
+  //.field--type-decimal,
+  //.field--type-entity-reference,
+  //.field--type-dynamic-entity-reference,
+  //.field--type-float {
+  //  display: inline-block;
+  //}
+  //
+  //.field--type-datetime {
+  //  clear: both;
+  //  display: table;
+  //}
+  //
+  //.form-control {
+  //  padding: 3px;
+  //}
+  //
+  //.input-group-addon {
+  //  padding: 3px;
+  //}
+  //
+  //.field--name-field-it-quantity {
+  //  // width: 10%;
+  //}
+
+  // .field--name-field-it-description {
+  //   .form-control {
+  //     width: 99%;
+  //   }
+  // }
+
+  // .field--name-field-it-price {
+  //   width: 15%;
+  // }
+  //
+
+  select.dynamic-entity-reference-entity-type {
+    padding: .40em 2em .40em .5em;
+    border: 1px solid #ccc;
+  }
+  .control-label {
+    display: none;
+  }
+  .panel {
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+  }
+  .panel-body {
     padding: 0;
   }
-  ul {
-    &.dropbutton {
-      list-style-type: none;
-    }
-    li {
-      float: right;
-    }
-  }
 
-  .paragraph-type-top {
-    margin-bottom: 0;
-  }
-
-  .paragraphs-subform {
-    .form-item {
-      margin-bottom: 2px;
-    }
-
-    .field--type-decimal,
-    .field--type-entity-reference,
-    .field--type-dynamic-entity-reference,
-    .field--type-float {
-      display: inline-block;
-    }
-
-    .field--type-datetime {
-      clear: both;
-      display: table;
-    }
-
-    .form-control {
-      padding: 3px;
-    }
-
-    .input-group-addon {
-      padding: 3px;
-    }
-
-    .field--name-field-it-quantity {
-      // width: 10%;
-    }
-
-    // .field--name-field-it-description {
-    //   .form-control {
-    //     width: 99%;
-    //   }
-    // }
-
-    // .field--name-field-it-price {
-    //   width: 15%;
-    // }
-
-    .field--type-dynamic-entity-reference {
-      .control-label {
-        display: none;
-      }
-      .panel {
-        background-color: inherit;
-        border: none;
-        box-shadow: none;
-      }
-      .panel-body {
-        padding: 0;
-      }
-      .form-select {
-        padding: .40em 2em .40em .5em;
-        border: 1px solid #ccc;
-      }
-    }
-  }
-
-  .paragraphs-dropdown-actions {
-    .btn-danger {
-      color: #000000;
-    }
-  }
 
 }
 
