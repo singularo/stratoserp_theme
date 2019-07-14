@@ -132,8 +132,13 @@ p:last-child,
     display: table;
   }
 
-  input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
-    line-height: normal !important;
+  //input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
+  //  height: auto;
+  //  line-height: unset; /* normal !important; */
+  //  display: table;
+  //}
+  input[type="date"].form-control {
+    line-height: unset;
   }
 
   .panel {
@@ -179,6 +184,10 @@ p:last-child,
       padding: 0;
     }
 
+    .select-wrapper::after {
+      display: none;
+    }
+
     .chosen-container-single {
       width: auto !important;
 
@@ -211,6 +220,7 @@ p:last-child,
 
 .field-multiple-table {
   margin-bottom: 0;
+  width: 95% !important;
 
   .draggable {
     div.form-item {
@@ -221,6 +231,7 @@ p:last-child,
       .icon:after {
         display: none;
       }
+      margin: -10px -25px 0 !important;
     }
   }
 }
@@ -231,73 +242,84 @@ p:last-child,
 #edit-field-qu-items-wrapper,
 #edit-field-po-items-wrapper,
 #edit-field-gr-items-wrapper {
-  //td {
-  //  padding: 0;
-  //}
-  //ul {
-  //  &.dropbutton {
-  //    list-style-type: none;
-  //  }
-  //  li {
-  //    float: right;
-  //  }
-  //}
+  /* Reduce table width to make room for the remove button to show. */
+  table {
 
-  //.form-item {
-  //  margin-bottom: 2px;
-  //}
-  //
-  //.field--type-decimal,
-  //.field--type-entity-reference,
-  //.field--type-dynamic-entity-reference,
-  //.field--type-float {
-  //  display: inline-block;
-  //}
-  //
-  //.field--type-datetime {
-  //  clear: both;
-  //  display: table;
-  //}
-  //
-  //.form-control {
-  //  padding: 3px;
-  //}
-  //
-  //.input-group-addon {
-  //  padding: 3px;
-  //}
-  //
-  //.field--name-field-it-quantity {
-  //  // width: 10%;
-  //}
+    td {
+      padding: 0;
+    }
 
-  // .field--name-field-it-description {
-  //   .form-control {
-  //     width: 99%;
-  //   }
-  // }
+    ul {
+      &.dropbutton {
+        list-style-type: none;
+      }
 
-  // .field--name-field-it-price {
-  //   width: 15%;
-  // }
-  //
+      li {
+        float: right;
+      }
+    }
 
-  select.dynamic-entity-reference-entity-type {
-    padding: .40em 2em .40em .5em;
-    border: 1px solid #ccc;
+    .form-item {
+      margin-bottom: 2px;
+    }
+
+    //
+    //.field--type-decimal,
+    //.field--type-entity-reference,
+    //.field--type-dynamic-entity-reference,
+    //.field--type-float {
+    //  display: inline-block;
+    //}
+    //
+
+    .form-date {
+      //clear: both;
+      //display: table;
+      //padding: 2px !important;
+    }
+
+    .form-control {
+      padding: 3px;
+    }
+
+    .input-group-addon {
+      padding: 3px;
+    }
+
+    //.field--name-field-it-quantity {
+    //  // width: 10%;
+    //}
+
+    // .field--name-field-it-description {
+    //   .form-control {
+    //     width: 99%;
+    //   }
+    // }
+
+    // .field--name-field-it-price {
+    //   width: 15%;
+    // }
+    //
+
+    select.dynamic-entity-reference-entity-type {
+      padding: .40em 2em .40em .5em;
+      border: 1px solid #ccc;
+    }
+
+    .control-label {
+      display: none;
+    }
+
+    .panel {
+      background-color: inherit;
+      border: none;
+      box-shadow: none;
+    }
+
+    .panel-body {
+      padding: 0;
+    }
   }
-  .control-label {
-    display: none;
-  }
-  .panel {
-    background-color: inherit;
-    border: none;
-    box-shadow: none;
-  }
-  .panel-body {
-    padding: 0;
-  }
-
 
 }
 
@@ -456,7 +478,7 @@ p:last-child,
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 5px;
-  line-height: 1.1;
+  //line-height: 1.1;
 }
 
 .pager {

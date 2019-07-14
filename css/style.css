@@ -6414,16 +6414,10 @@ p:last-child,
 .se-item-form .input-group,
 .se-information-form .input-group {
   display: table; }
-.node-form input[type="date"].form-control, .node-form input[type="time"].form-control, .node-form input[type="datetime-local"].form-control, .node-form input[type="month"].form-control,
+.node-form input[type="date"].form-control,
 .se-item-form input[type="date"].form-control,
-.se-item-form input[type="time"].form-control,
-.se-item-form input[type="datetime-local"].form-control,
-.se-item-form input[type="month"].form-control,
-.se-information-form input[type="date"].form-control,
-.se-information-form input[type="time"].form-control,
-.se-information-form input[type="datetime-local"].form-control,
-.se-information-form input[type="month"].form-control {
-  line-height: normal !important; }
+.se-information-form input[type="date"].form-control {
+  line-height: unset; }
 .node-form .panel,
 .se-item-form .panel,
 .se-information-form .panel {
@@ -6467,6 +6461,10 @@ p:last-child,
   border: none;
   box-shadow: none;
   padding: 0; }
+.node-form .form-type-select .select-wrapper::after,
+.se-item-form .form-type-select .select-wrapper::after,
+.se-information-form .form-type-select .select-wrapper::after {
+  display: none; }
 .node-form .form-type-select .chosen-container-single,
 .se-item-form .form-type-select .chosen-container-single,
 .se-information-form .form-type-select .chosen-container-single {
@@ -6493,40 +6491,85 @@ p:last-child,
   padding: 3px 8px; }
 
 .field-multiple-table {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  width: 95% !important; }
   .field-multiple-table .draggable div.form-item {
     float: left; }
-  .field-multiple-table .draggable button.multiple-fields-remove-button .icon:after {
-    display: none; }
+  .field-multiple-table .draggable button.multiple-fields-remove-button {
+    margin: -10px -25px 0 !important; }
+    .field-multiple-table .draggable button.multiple-fields-remove-button .icon:after {
+      display: none; }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
-#edit-field-bi-items-wrapper select.dynamic-entity-reference-entity-type,
-#edit-field-in-items-wrapper select.dynamic-entity-reference-entity-type,
-#edit-field-qu-items-wrapper select.dynamic-entity-reference-entity-type,
-#edit-field-po-items-wrapper select.dynamic-entity-reference-entity-type,
-#edit-field-gr-items-wrapper select.dynamic-entity-reference-entity-type {
-  padding: .40em 2em .40em .5em;
-  border: 1px solid #ccc; }
-#edit-field-bi-items-wrapper .control-label,
-#edit-field-in-items-wrapper .control-label,
-#edit-field-qu-items-wrapper .control-label,
-#edit-field-po-items-wrapper .control-label,
-#edit-field-gr-items-wrapper .control-label {
-  display: none; }
-#edit-field-bi-items-wrapper .panel,
-#edit-field-in-items-wrapper .panel,
-#edit-field-qu-items-wrapper .panel,
-#edit-field-po-items-wrapper .panel,
-#edit-field-gr-items-wrapper .panel {
-  background-color: inherit;
-  border: none;
-  box-shadow: none; }
-#edit-field-bi-items-wrapper .panel-body,
-#edit-field-in-items-wrapper .panel-body,
-#edit-field-qu-items-wrapper .panel-body,
-#edit-field-po-items-wrapper .panel-body,
-#edit-field-gr-items-wrapper .panel-body {
-  padding: 0; }
+#edit-field-bi-items-wrapper,
+#edit-field-in-items-wrapper,
+#edit-field-qu-items-wrapper,
+#edit-field-po-items-wrapper,
+#edit-field-gr-items-wrapper {
+  /* Reduce table width to make room for the remove button to show. */ }
+  #edit-field-bi-items-wrapper table td,
+  #edit-field-in-items-wrapper table td,
+  #edit-field-qu-items-wrapper table td,
+  #edit-field-po-items-wrapper table td,
+  #edit-field-gr-items-wrapper table td {
+    padding: 0; }
+  #edit-field-bi-items-wrapper table ul.dropbutton,
+  #edit-field-in-items-wrapper table ul.dropbutton,
+  #edit-field-qu-items-wrapper table ul.dropbutton,
+  #edit-field-po-items-wrapper table ul.dropbutton,
+  #edit-field-gr-items-wrapper table ul.dropbutton {
+    list-style-type: none; }
+  #edit-field-bi-items-wrapper table ul li,
+  #edit-field-in-items-wrapper table ul li,
+  #edit-field-qu-items-wrapper table ul li,
+  #edit-field-po-items-wrapper table ul li,
+  #edit-field-gr-items-wrapper table ul li {
+    float: right; }
+  #edit-field-bi-items-wrapper table .form-item,
+  #edit-field-in-items-wrapper table .form-item,
+  #edit-field-qu-items-wrapper table .form-item,
+  #edit-field-po-items-wrapper table .form-item,
+  #edit-field-gr-items-wrapper table .form-item {
+    margin-bottom: 2px; }
+  #edit-field-bi-items-wrapper table .form-control,
+  #edit-field-in-items-wrapper table .form-control,
+  #edit-field-qu-items-wrapper table .form-control,
+  #edit-field-po-items-wrapper table .form-control,
+  #edit-field-gr-items-wrapper table .form-control {
+    padding: 3px; }
+  #edit-field-bi-items-wrapper table .input-group-addon,
+  #edit-field-in-items-wrapper table .input-group-addon,
+  #edit-field-qu-items-wrapper table .input-group-addon,
+  #edit-field-po-items-wrapper table .input-group-addon,
+  #edit-field-gr-items-wrapper table .input-group-addon {
+    padding: 3px; }
+  #edit-field-bi-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-in-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-qu-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-po-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-gr-items-wrapper table select.dynamic-entity-reference-entity-type {
+    padding: .40em 2em .40em .5em;
+    border: 1px solid #ccc; }
+  #edit-field-bi-items-wrapper table .control-label,
+  #edit-field-in-items-wrapper table .control-label,
+  #edit-field-qu-items-wrapper table .control-label,
+  #edit-field-po-items-wrapper table .control-label,
+  #edit-field-gr-items-wrapper table .control-label {
+    display: none; }
+  #edit-field-bi-items-wrapper table .panel,
+  #edit-field-in-items-wrapper table .panel,
+  #edit-field-qu-items-wrapper table .panel,
+  #edit-field-po-items-wrapper table .panel,
+  #edit-field-gr-items-wrapper table .panel {
+    background-color: inherit;
+    border: none;
+    box-shadow: none; }
+  #edit-field-bi-items-wrapper table .panel-body,
+  #edit-field-in-items-wrapper table .panel-body,
+  #edit-field-qu-items-wrapper table .panel-body,
+  #edit-field-po-items-wrapper table .panel-body,
+  #edit-field-gr-items-wrapper table .panel-body {
+    padding: 0; }
 
 .layout .field--label,
 .layout .field--label-hidden,
@@ -6618,8 +6661,7 @@ p:last-child,
 .table > tbody > tr > td,
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
-  padding: 5px;
-  line-height: 1.1; }
+  padding: 5px; }
 
 .pager {
   margin: 0;
