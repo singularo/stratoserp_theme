@@ -241,7 +241,8 @@ p:last-child,
 #edit-field-in-items-wrapper,
 #edit-field-qu-items-wrapper,
 #edit-field-po-items-wrapper,
-#edit-field-gr-items-wrapper {
+#edit-field-gr-items-wrapper ,
+#edit-field-pa-lines-wrapper {
   /* Reduce table width to make room for the remove button to show. */
   table {
 
@@ -301,7 +302,8 @@ p:last-child,
     // }
     //
 
-    select.dynamic-entity-reference-entity-type {
+    select.dynamic-entity-reference-entity-type,
+    select.form-select {
       padding: .40em 2em .40em .5em;
       border: 1px solid #ccc;
     }

@@ -6505,62 +6505,78 @@ p:last-child,
 #edit-field-in-items-wrapper,
 #edit-field-qu-items-wrapper,
 #edit-field-po-items-wrapper,
-#edit-field-gr-items-wrapper {
+#edit-field-gr-items-wrapper,
+#edit-field-pa-lines-wrapper {
   /* Reduce table width to make room for the remove button to show. */ }
   #edit-field-bi-items-wrapper table td,
   #edit-field-in-items-wrapper table td,
   #edit-field-qu-items-wrapper table td,
   #edit-field-po-items-wrapper table td,
-  #edit-field-gr-items-wrapper table td {
+  #edit-field-gr-items-wrapper table td,
+  #edit-field-pa-lines-wrapper table td {
     padding: 0; }
   #edit-field-bi-items-wrapper table ul.dropbutton,
   #edit-field-in-items-wrapper table ul.dropbutton,
   #edit-field-qu-items-wrapper table ul.dropbutton,
   #edit-field-po-items-wrapper table ul.dropbutton,
-  #edit-field-gr-items-wrapper table ul.dropbutton {
+  #edit-field-gr-items-wrapper table ul.dropbutton,
+  #edit-field-pa-lines-wrapper table ul.dropbutton {
     list-style-type: none; }
   #edit-field-bi-items-wrapper table ul li,
   #edit-field-in-items-wrapper table ul li,
   #edit-field-qu-items-wrapper table ul li,
   #edit-field-po-items-wrapper table ul li,
-  #edit-field-gr-items-wrapper table ul li {
+  #edit-field-gr-items-wrapper table ul li,
+  #edit-field-pa-lines-wrapper table ul li {
     float: right; }
   #edit-field-bi-items-wrapper table .form-item,
   #edit-field-in-items-wrapper table .form-item,
   #edit-field-qu-items-wrapper table .form-item,
   #edit-field-po-items-wrapper table .form-item,
-  #edit-field-gr-items-wrapper table .form-item {
+  #edit-field-gr-items-wrapper table .form-item,
+  #edit-field-pa-lines-wrapper table .form-item {
     margin-bottom: 2px; }
   #edit-field-bi-items-wrapper table .form-control,
   #edit-field-in-items-wrapper table .form-control,
   #edit-field-qu-items-wrapper table .form-control,
   #edit-field-po-items-wrapper table .form-control,
-  #edit-field-gr-items-wrapper table .form-control {
+  #edit-field-gr-items-wrapper table .form-control,
+  #edit-field-pa-lines-wrapper table .form-control {
     padding: 3px; }
   #edit-field-bi-items-wrapper table .input-group-addon,
   #edit-field-in-items-wrapper table .input-group-addon,
   #edit-field-qu-items-wrapper table .input-group-addon,
   #edit-field-po-items-wrapper table .input-group-addon,
-  #edit-field-gr-items-wrapper table .input-group-addon {
+  #edit-field-gr-items-wrapper table .input-group-addon,
+  #edit-field-pa-lines-wrapper table .input-group-addon {
     padding: 3px; }
   #edit-field-bi-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-bi-items-wrapper table select.form-select,
   #edit-field-in-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-in-items-wrapper table select.form-select,
   #edit-field-qu-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-qu-items-wrapper table select.form-select,
   #edit-field-po-items-wrapper table select.dynamic-entity-reference-entity-type,
-  #edit-field-gr-items-wrapper table select.dynamic-entity-reference-entity-type {
+  #edit-field-po-items-wrapper table select.form-select,
+  #edit-field-gr-items-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-gr-items-wrapper table select.form-select,
+  #edit-field-pa-lines-wrapper table select.dynamic-entity-reference-entity-type,
+  #edit-field-pa-lines-wrapper table select.form-select {
     padding: .40em 2em .40em .5em;
     border: 1px solid #ccc; }
   #edit-field-bi-items-wrapper table .control-label,
   #edit-field-in-items-wrapper table .control-label,
   #edit-field-qu-items-wrapper table .control-label,
   #edit-field-po-items-wrapper table .control-label,
-  #edit-field-gr-items-wrapper table .control-label {
+  #edit-field-gr-items-wrapper table .control-label,
+  #edit-field-pa-lines-wrapper table .control-label {
     display: none; }
   #edit-field-bi-items-wrapper table .panel,
   #edit-field-in-items-wrapper table .panel,
   #edit-field-qu-items-wrapper table .panel,
   #edit-field-po-items-wrapper table .panel,
-  #edit-field-gr-items-wrapper table .panel {
+  #edit-field-gr-items-wrapper table .panel,
+  #edit-field-pa-lines-wrapper table .panel {
     background-color: inherit;
     border: none;
     box-shadow: none; }
@@ -6568,7 +6584,8 @@ p:last-child,
   #edit-field-in-items-wrapper table .panel-body,
   #edit-field-qu-items-wrapper table .panel-body,
   #edit-field-po-items-wrapper table .panel-body,
-  #edit-field-gr-items-wrapper table .panel-body {
+  #edit-field-gr-items-wrapper table .panel-body,
+  #edit-field-pa-lines-wrapper table .panel-body {
     padding: 0; }
 
 .layout .field--label,
