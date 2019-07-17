@@ -104,7 +104,6 @@ p:last-child,
   input, select, .select-wrapper, .table, .input-group, label {
     width: auto;
     height: auto;
-    // z-index: 0;
     border-radius: 0;
   }
 
@@ -122,21 +121,12 @@ p:last-child,
 
   .form-group {
     margin-bottom: 5px;
-    //.glyphicon {
-    //  top: 6px;
-    //  left: 6px;
-    //}
   }
 
   .input-group {
     display: table;
   }
 
-  //input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
-  //  height: auto;
-  //  line-height: unset; /* normal !important; */
-  //  display: table;
-  //}
   input[type="date"].form-control {
     line-height: unset;
   }
@@ -207,9 +197,6 @@ p:last-child,
 
   .input-group-addon {
     padding: 3px;
-    //.glyphicon {
-    //  left: -50%;
-    //}
   }
 
   .btn {
@@ -248,6 +235,24 @@ p:last-child,
 
     td {
       padding: 0;
+
+      div.se-item-line-left {
+        width: 48%;
+        vertical-align: top;
+
+        div[class*=target-type],
+        div[class*=quantity],
+        div[class*=serial] {
+          float: left;
+          clear: both;
+        }
+        div[class*=price] {
+          float: right;
+        }
+      }
+      div.se-item-line-right {
+        width: 50%;
+      }
     }
 
     ul {
@@ -264,21 +269,6 @@ p:last-child,
       margin-bottom: 2px;
     }
 
-    //
-    //.field--type-decimal,
-    //.field--type-entity-reference,
-    //.field--type-dynamic-entity-reference,
-    //.field--type-float {
-    //  display: inline-block;
-    //}
-    //
-
-    .form-date {
-      //clear: both;
-      //display: table;
-      //padding: 2px !important;
-    }
-
     .form-control {
       padding: 3px;
     }
@@ -286,21 +276,6 @@ p:last-child,
     .input-group-addon {
       padding: 3px;
     }
-
-    //.field--name-field-it-quantity {
-    //  // width: 10%;
-    //}
-
-    // .field--name-field-it-description {
-    //   .form-control {
-    //     width: 99%;
-    //   }
-    // }
-
-    // .field--name-field-it-price {
-    //   width: 15%;
-    // }
-    //
 
     select.dynamic-entity-reference-entity-type,
     select.form-select {
@@ -556,20 +531,3 @@ p:last-child,
     }
   }
 }
-
-
-//ul.nice-menu-down li.menuparent a::after {
-//  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
-//}
-//
-//ul.nice-menu-down li.menuparent:hover a::after {
-//  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
-//}
-//
-//ul.nice-menu-down li li.menuparent a::after {
-//  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
-//}
-//
-//ul.nice-menu-down li li.menuparent:hover a::after {
-//  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
-//}

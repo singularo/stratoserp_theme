@@ -6515,6 +6515,48 @@ p:last-child,
   #edit-field-gr-items-wrapper table td,
   #edit-field-pa-lines-wrapper table td {
     padding: 0; }
+    #edit-field-bi-items-wrapper table td div.se-item-line-left,
+    #edit-field-in-items-wrapper table td div.se-item-line-left,
+    #edit-field-qu-items-wrapper table td div.se-item-line-left,
+    #edit-field-po-items-wrapper table td div.se-item-line-left,
+    #edit-field-gr-items-wrapper table td div.se-item-line-left,
+    #edit-field-pa-lines-wrapper table td div.se-item-line-left {
+      width: 48%;
+      vertical-align: top; }
+      #edit-field-bi-items-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-bi-items-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-bi-items-wrapper table td div.se-item-line-left div[class*=serial],
+      #edit-field-in-items-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-in-items-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-in-items-wrapper table td div.se-item-line-left div[class*=serial],
+      #edit-field-qu-items-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-qu-items-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-qu-items-wrapper table td div.se-item-line-left div[class*=serial],
+      #edit-field-po-items-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-po-items-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-po-items-wrapper table td div.se-item-line-left div[class*=serial],
+      #edit-field-gr-items-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-gr-items-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-gr-items-wrapper table td div.se-item-line-left div[class*=serial],
+      #edit-field-pa-lines-wrapper table td div.se-item-line-left div[class*=target-type],
+      #edit-field-pa-lines-wrapper table td div.se-item-line-left div[class*=quantity],
+      #edit-field-pa-lines-wrapper table td div.se-item-line-left div[class*=serial] {
+        float: left;
+        clear: both; }
+      #edit-field-bi-items-wrapper table td div.se-item-line-left div[class*=price],
+      #edit-field-in-items-wrapper table td div.se-item-line-left div[class*=price],
+      #edit-field-qu-items-wrapper table td div.se-item-line-left div[class*=price],
+      #edit-field-po-items-wrapper table td div.se-item-line-left div[class*=price],
+      #edit-field-gr-items-wrapper table td div.se-item-line-left div[class*=price],
+      #edit-field-pa-lines-wrapper table td div.se-item-line-left div[class*=price] {
+        float: right; }
+    #edit-field-bi-items-wrapper table td div.se-item-line-right,
+    #edit-field-in-items-wrapper table td div.se-item-line-right,
+    #edit-field-qu-items-wrapper table td div.se-item-line-right,
+    #edit-field-po-items-wrapper table td div.se-item-line-right,
+    #edit-field-gr-items-wrapper table td div.se-item-line-right,
+    #edit-field-pa-lines-wrapper table td div.se-item-line-right {
+      width: 50%; }
   #edit-field-bi-items-wrapper table ul.dropbutton,
   #edit-field-in-items-wrapper table ul.dropbutton,
   #edit-field-qu-items-wrapper table ul.dropbutton,
