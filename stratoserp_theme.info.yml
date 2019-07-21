@@ -31,4 +31,3 @@ entity_print:
 #    all: 'stratoserp_theme/se_invoice'
 #  se_quote:
 #    all: 'stratoserp_theme/se_quote'
-
