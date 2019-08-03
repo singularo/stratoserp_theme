@@ -224,12 +224,13 @@ p:last-child,
 }
 
 /* Custom css for items display on invoice, quote, po, goods receive */
-#edit-field-bi-items-wrapper,
-#edit-field-in-items-wrapper,
-#edit-field-qu-items-wrapper,
-#edit-field-po-items-wrapper,
-#edit-field-gr-items-wrapper ,
-#edit-field-pa-lines-wrapper {
+#edit-field-bi-lines-wrapper,
+#edit-field-in-lines-wrapper,
+#edit-field-qu-lines-wrapper,
+#edit-field-po-lines-wrapper,
+#edit-field-gr-lines-wrapper,
+#edit-field-pa-lines-wrapper,
+#edit-field-su-item-wrapper {
   /* Reduce table width to make room for the remove button to show. */
   table {
 
@@ -252,6 +253,9 @@ p:last-child,
       }
       div.se-item-line-right {
         width: 50%;
+        div.text-format-wrapper {
+          display: inline-table;
+        }
       }
     }
 
