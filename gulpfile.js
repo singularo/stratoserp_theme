@@ -1,32 +1,33 @@
-var gulp = require('gulp');
-var changed = require('gulp-changed');
-var sass = require('gulp-ruby-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var imagemin = require('gulp-imagemin');
+const gulp = require('gulp'),
+  sass = require('gulp-sass'),
+  postcss = require('gulp-postcss'),
+  autoprefixer = require('autoprefixer'),
+  cssnano = require('cssnano'),
+  sourcemaps = require('gulp-sourcemaps');
 
-var SASS = 'scss';
-var CSS = 'css';
+const paths = {
+  styles: {
+    src: "scss/**/*.scss",
+    dest: "css"
+  }
+};
 
-gulp.task('sass', function () {
-  return sass(SASS + '/**/*.scss', {
-      compass: true
-    })
+function style() {
+  return gulp
+    .src(paths.styles.src)
+    .pipe(sourcemaps.init())
+    .pipe(sass())
     .on('error', sass.logError)
-    .pipe(gulp.dest(CSS));
-});
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.styles.dest))
+}
 
-gulp.task('autoprefixer', ['sass'], function() {
-  gulp.src(CSS + '/*.css')
-    .pipe(autoprefixer({
-        browsers: ['> 1%']
-    }))
-    .pipe(gulp.dest(CSS));
-});
+function watch() {
+  style();
 
-gulp.task('build', ['sass']);
+  gulp.watch(paths.styles.src, style)
+}
 
-gulp.task('watch', function() {
-  gulp.watch(SASS + '/**/*.scss', ['sass']);
-});
-
-gulp.task('default', ['build', 'watch']);
+exports.watch = watch;
+exports.style = style;
