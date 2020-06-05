@@ -2,33 +2,28 @@ name: Stratos BS
 type: theme
 description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
 package: 'Bootstrap'
-version: VERSION
 core: 8.x
 core_version_requirement: ^8 || ^9
-base theme: bootstrap
+base theme: bootstrap4
 
-regions:
-  navigation: 'Navigation'
-  navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Top Bar'
-  highlighted: 'Highlighted'
-  help: 'Help'
-  content: 'Content'
-  sidebar_first: 'Primary'
-  sidebar_second: 'Secondary'
-  footer: 'Footer'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
+# Stylesheets.
+stylesheets-remove:
+  - '@bootstrap4/css/style.css'
 
+# Libraries.
 libraries:
   - 'stratoserp_theme/global-styling'
   - 'stratoserp_theme/bootstrap-scripts'
   - 'stratoserp_theme/views_height_lock'
   - 'stratoserp_theme/tabindex_fixer'
 
-entity_print:
-  all: 'stratoserp_theme/pdf'
-#  se_invoice:
-#    all: 'stratoserp_theme/se_invoice'
-#  se_quote:
-#    all: 'stratoserp_theme/se_quote'
+regions:
+  header: 'Header'
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: 'Breadcrumbs'
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
