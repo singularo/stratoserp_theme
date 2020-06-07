@@ -1,8 +1,25 @@
-// Default variables.
-@import "default-variables";
+// Include bootstrap variables definitions overrides.
+@import 'overrides/variables';
 
-// Bootstrap Framework.
-@import '../bootstrap/assets/stylesheets/bootstrap';
+// Include parent theme with all things Bootstrap for full override.
+// Relative path to this styles.scss file.
+// Example: @import "../../../../../themes/contrib/bootstrap4/scss/style";
+//@import "../../contrib/bootstrap4/scss/style";
 
-// Base-theme overrides.
-@import 'overrides';
+// OR test new Bootstrap 4.5.0
+@import "../../contrib/bootstrap4/scss/style-4-5-0";
+
+// Include custom sub theme.
+@import 'custom/variables';
+
+// Include custom sub theme.
+//@import 'custom/mixins/misc';
+//@import 'custom/misc';
+
+.block-se-core {
+  .item-list {
+    li {
+      display: inline-block;
+    }
+  }
+}

@@ -17,3 +17,11 @@ function stratoserp_theme_preprocess_node(&$variables) {
     unset($variables['content']['links']['comment']['#links']['comment-add']);
   }
 }
+
+
+/**
+ * Implement hook_theme_suggestions_item_alter().
+ */
+function stratoserp_theme_theme_suggestions_item_list_alter(&$hook, $vars) {
+  $hook[] = 'item-list__se-core';
+}

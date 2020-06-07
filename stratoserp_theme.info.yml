@@ -13,9 +13,6 @@ stylesheets-remove:
 # Libraries.
 libraries:
   - 'stratoserp_theme/global-styling'
-  - 'stratoserp_theme/bootstrap-scripts'
-  - 'stratoserp_theme/views_height_lock'
-  - 'stratoserp_theme/tabindex_fixer'
 
 regions:
   header: 'Header'
